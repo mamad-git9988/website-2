@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fendi Store</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icom.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-text">Fendi Store</div>
+        <div class="card-icon">⌚</div>
+    </div>
+
+    <!-- Main Menu -->
+     
+        <div class="container" id="mainMenu">
+        <div class="header">
+            <h1>Fendi Store</h1>
+            <p>The only shop you need</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card" onclick="openSection('che')">
+                <span class="card-icon">🌈</span>
+                <h2 class="card-title">درباره محصولات ما</h2>
+            </div>
+            <div class="menu-card" onclick="openSection('specs')">
+                <span class="card-icon">⌚</span>
+                <h2 class="card-title">محصولات ما</h2>
+            </div>
+            <div class="menu-card" onclick="openSection('social')">
+                <span class="card-icon">🌐</span>
+                <h2 class="card-title">شبکه‌های اجتماعی</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="content-section" id="cheSection">
+        <button class="close-btn" onclick="closeSection()">🏠</button>
+        <div class="section-content">
+            <div class="about-box">
+                <p class="about-text">
+                   <span class="highlight">Fendi Store Iran</span>
+                   فقط یک فروشگاه آنلاین نیست ; جاییست برای انتخاب های خاص و سلیقه های متفاوت<br>ما با دقت و وسواس <span class="highlight">کفش ها ساعت ها ادکلن ها عینک ها و اکسسوری های ترند و با کیفیت</span> را انتخاب می کنیم تا شما با خیال راحت بدرخشید. <br> ما باور داریم لوکس بودن تنها یک ظاهر نیست ; بلکه احساسی از اطمینان , سلیقه و انتخاب آگاهانه است . <br> <span class="highlight">Fendi Store Iran</span> <br> انتخاب کسانیست که <span class="highlight">متفاوت</span> اند
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section" id="aboutSection">
+        <button class="close-btn" onclick="closeSection()">🏠</button>
+        <div class="about-box">
+            <div class="menu-card">
+                <div class="lagab">
+                <div class="spec-card">
+                    <div class="spec-name">تکیه کلامم</div>
+                    <div class="spec-value">بیا منو بخورر!!!</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-name">لغبام</div>
+                    <div class="spec-value">ممد قلی , مد من</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-name">اسمم </div>
+                    <div class="spec-value">ممد علیقلی زاده </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Specs Section -->
+    <div class="content-section" id="specsSection">
+        <button class="close-btn" onclick="closeSection()">🏠</button>
+        <div class="section-content">
+          <div class="menu-card">
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <a href="./watch/index.html"><div class="spec-icon">⌚</div>
+                    <div class="spec-name">انواع ساعت ها</div></a>
+                </div>
+                <div class="spec-card">
+                    <a href="./sport/index.html"><div class="spec-icon">🏈</div>
+                    <div class="spec-name">لباس های ورزشی</div></a>
+                </div>
+                <div class="spec-card">
+                    <a href="./cloth/index.html">
+                    <div class="spec-icon">👚</div>
+                    <div class="spec-name">انواع لباس ها</div>
+                    </a>
+                </div>
+                <div class="spec-card">
+                    <a href="./shoes/index.html">
+                    <div class="spec-icon">👞</div>
+                    <div class="spec-name">انواع کفش ها</div>
+                    </a>
+                </div>
+                <div class="spec-card">
+                    <a href="./cologne/index.html">
+                        <div class="spec-icon">📦</div>
+                        <div class="spec-name">انواع ادکلن ها</div>
+                    </a>
+                </div>
+                    <div class="spec-card">
+                     <a href="others/index.html">
+                            <div class="spec-icon">💌</div>
+                            <div class="spec-name">سایر محصولات</div>
+                        </a>
+                    </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="content-section" id="madSection">
+        <button class="close-btn" onclick="closeSection()">🏠</button>
+        <div class="menu-card">
+            <a href="https://b2n.ir/ab3y-net">
+            <div class="spec-icon"><img src="ab3y-logo.png" sizes="10x69"></div>
+            <div class="spec-name">ab3y</div>
+            <div class="spec-value">ab3y for code & help</div>
+            </a>
+        </div>
+        <div class="menu-card">
+            <a href="https://b2n.ir/ratus-voice">
+                <div class="spec-name">ratus | the your voice asisant</div>
+                <div class="spec-value">راتوس | یک هوش مصنوعی صوتی</div>
+            </a>
+        </div>
+    </div>
+    <div class="content-section" id="tajSection">
+        <button class="close-btn" onclick="closeSection()">🏠</button>
+        <div class="section-content">
+          <div class="menu-card">
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-icon">🖱</div>
+                    <div class="spec-name">موس</div>
+                    <div class="spec-value">هنوز فابریک</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon">⌨</div>
+                    <div class="spec-name">کیبورد</div>
+                    <div class="spec-value">هنوز فابریک</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon">🎧</div>
+                    <div class="spec-name">هدفون </div>
+                    <div class="spec-value">S33 ENC+ANC Sterio</div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="content-section" id="manSection">
+        <button class="close-btn" onclick="closeSection()">🏠</button>
+        <div class="menu-card">
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-icon"></div>
+                    <div class="spec-name"></div>
+                    <div class="spec-value"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Social Section -->
+<div class="content-section" id="socialSection">
+    <button class="close-btn" onclick="closeSection()">🏠</button>
+
+    <div class="section-content">
+        <div class="social-grid">
+            
+            <a href="https://t.me/fendistoreiran"target="_blank"class="social-link telegram">
+            <span class="social-icon">🔵</span>
+                <div class="social-info">
+                <div class="social-name">تلگرام</div>
+                <div class="social-url">t.me/fendistoreiran</div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/fendistore.iran/" class="social-link aparat">
+                <span class="social-icon">🔴</span>
+                <div class="social-info">
+                    <div class="social-name">اینستا</div>
+                    <div class="social-url">https://www.instagram.com/fendistore.iran/</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>
+   <script>
+        // Create particles
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        // Hide loader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000);
+        });
+
+        createParticles();
+
+        // Section management
+        function openSection(section) {
+            document.getElementById('mainMenu').style.display = 'none';
+            document.getElementById(section + 'Section').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSection() {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById('mainMenu').style.display = 'flex';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeSection();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'a') openSection('about')
+        })
+    </script>
+</body>
+</html>
